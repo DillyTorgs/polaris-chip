@@ -13,11 +13,15 @@
     body {
       margin: 0;
       padding: 0;
-      font-family: sans-serif;
-      background-color: #ededed;
+      font-family: Arial;
+      background-color: rgb(255, 255, 255);
     }
     polaris-chip {
       margin: 16px;
+    }
+    my-card {
+      margin: 32px;
+      font-family: 'Copperplate';
     }
   </style>
   <title>polaris-chip / my-card</title>
@@ -26,13 +30,53 @@
 <body>
   <h1>polaris-chip</h1>
   <!-- this is going to do whatever the tag's defaults are -->
-  <polaris-chip title="News of Record" link="https://psu.edu/"></polaris-chip>
-  <polaris-chip title="Faculty and Staff"></polaris-chip>
+  <polaris-chip title="News of Record" link="https://psu.edu/" shiny></polaris-chip>
+  <polaris-chip title="Faculty and Staff" link="https://hax.psu.edu"></polaris-chip>
   <polaris-chip title="Sports are the only thing that matter"></polaris-chip>
   <polaris-chip title="Grants and donations"></polaris-chip>
 
   <h1>my-card</h1>
-  <my-card></my-card>
+  <my-card 
+    image=https://i.pinimg.com/originals/5e/70/2b/5e702b0278e3814149840755e82948bc.png
+    link="https://crumblcookies.com/" 
+    title="Crumbl Cookies"
+    description="See the new national flavors of the Week"
+    buttonDesc="Details"
+    slot="Milk Chocolate Chip 
+   Birthday Cake ft. OREO®
+   Peanut Butter ft. SNICKERS®
+   Caramel Shortbread ft. TWIX®
+   The Original Pink Sugar
+   ">
+  </my-card>
+  <my-card 
+    image="https://logos-world.net/wp-content/uploads/2023/11/Raising-Canes-Logo.png" 
+    link="https://www.raisingcanes.com/home/" 
+    title="Raising Canes" 
+    description="See the full menu here"
+    buttonDesc="Details">
+  </my-card>
+  <my-card 
+    image="https://www.caternation.com/images/Roots%20Logo.jpg" 
+    link="https://www.rootsnaturalkitchen.com/"
+    title="Roots Natural Kitchen" 
+    description="Introducing the new Astra Bowl"
+    buttonDesc="Details">
+  </my-card>
+  <my-card 
+    image="https://logos-world.net/wp-content/uploads/2022/01/Panera-Bread-Logo.png" 
+    link="https://www.panerabread.com/content/panerabread_com/en-us/home.html" 
+    title="Panera" 
+    description="You need a bread bowl"
+    buttonDesc="Details">
+  </my-card>
+  <my-card 
+    image="https://www.veteranjobsmission.com/content/dam/veteran-jobs-mission/logos/logo-chipotle.png" 
+    link="https://www.chipotle.com/?utm_source=Bing&utm_medium=paid-search&utm_campaign=ordering&utm_content=94646034135&gclid=19d6aebb38bf1ed8a8e6c84e42c2b2fc&gclsrc=3p.ds&msclkid=19d6aebb38bf1ed8a8e6c84e42c2b2fc&utm_term=chipotle" 
+    title="Chipotle" 
+    description="Limited time only: Smoked Brisket"
+    buttonDesc="Details">
+  </my-card>
 
   <!-- this is what is bringing in the definition for this tag -->
   <script type="module" src="./src/polaris-chip.js"></script>
